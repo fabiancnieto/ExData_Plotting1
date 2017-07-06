@@ -22,9 +22,9 @@ dataDf <- dataDf %>% mutate(
     completeDate = as.POSIXct(paste(Date,Time)))
 
 ##Open the PNG Device
-png(filename = "plot1.png", width = 480, height = 480, units = "px")
+png(filename = "plot2.png", width = 480, height = 480, units = "px")
 ##Plot the histogram for Global_active_power
-hist(dataDf$Global_active_power, main = "Global Active Power", xlab = "Global Active Power(kilowatts)", col = "red")
+plot(dataDf$completeDate, dataDf$Global_active_power,lty=1,type="l", xlab = "", ylab = "Global Active Power(kilowatts)")
 ##Close the device
 dev.off()
 
