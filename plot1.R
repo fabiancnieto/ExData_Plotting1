@@ -1,7 +1,7 @@
 library(dplyr)
 ##Set Working directory
 setwd("/home/fnieto/Documents/R-Programming-Training/datasciencecoursera/Exploratory Data Analysis/Week1/CourseProject")
-path2file <- "/home/fnieto/Documents/R-Programming-Training/datasciencecoursera/Exploratory Data Analysis/Week1/data/household_power_consumption.txt"
+path2file <- "/home/fnieto/Documents/R-Programming-Training/datasciencecoursera/Exploratory Data Analysis/Week1/CourseProject/data/household_power_consumption.txt"
 
 rawData <- read.csv(path2file, sep = ";")
 ##Subset the original file
