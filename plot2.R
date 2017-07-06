@@ -23,7 +23,7 @@ dataDf <- dataDf %>% mutate(
 
 ##Open the PNG Device
 png(filename = "plot2.png", width = 480, height = 480, units = "px")
-##Plot the histogram for Global_active_power
+##Plot
 plot(dataDf$completeDate, dataDf$Global_active_power,lty=1,type="l", xlab = "", ylab = "Global Active Power(kilowatts)")
 ##Close the device
 dev.off()
